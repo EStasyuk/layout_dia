@@ -1,0 +1,122 @@
+
+.header {
+  background-color: #2C2C2C;
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template: minmax(46px, auto) minmax(359px, auto) minmax(390px, auto)/1fr;
+  row-gap: 48px;
+  grid-template-areas:
+  "top-bar"
+  "middle"
+  "img-bottom";
+  //flex-direction: column;
+  //justify-content: space-between;
+  //background-image: url(/src/images/cover_img.png);
+  //background-position: bottom;
+  //background-size: 100%;
+  //background-repeat: no-repeat;
+  border-radius: 0 0 50px 50px;
+
+}
+
+.middle {
+  grid-area: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  //flex-direction: column;
+  //justify-content: space-between;
+
+}
+
+.header__title {
+  display: grid;
+  row-gap: 32px;
+}
+
+.header__text {
+  display: grid;
+  row-gap: 72px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.img-bottom {
+  grid-area: img-bottom;
+  background-image: url(/src/images/cover_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  border-radius: 30px;
+
+
+}
+
+.header__img {
+  background-position: bottom;
+  width: 100%;
+
+
+}
+
+.img-items {
+  display: block;
+  padding: 250px 20px 24px 20px;
+}
+.arrow {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.intro--subtitle {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: left;
+
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header__img-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  //line-height: 140%;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  color: #FFFFFF;
+  width: 280;
+  height: 50;
+  border-radius: 8px;
+  background-color: #2060F6;
+  align-self: flex-end;
+
+}
