@@ -13,15 +13,25 @@
 
 
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .wrapper {
   display: grid;
-  grid-template: minmax(893px, auto) minmax(402px, auto) minmax(1375px, auto) minmax(1467px, auto) minmax(1548px, auto) minmax(571px, auto) minmax(auto, auto)/1fr;
+  //grid-template: minmax(893px, auto) minmax(402px, auto) minmax(1375px, auto) minmax(1467px, auto) minmax(1548px, auto) minmax(571px, auto) minmax(auto, auto)/1fr;
   //gap: 120px;
   background-color: #F2F6FA;
+}
+
+h1 {
+  margin: 0;
 }
 
 h2 {
@@ -38,7 +48,7 @@ h4 {
   font-size: 13px;
   line-height: 100%;
   letter-spacing: 3px;
-  text-align: center;
+  //text-align: center;
   text-transform: uppercase;
   color: #C0CDD7;
   margin: 0;

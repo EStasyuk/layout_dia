@@ -3,8 +3,13 @@
   background-color: #2C2C2C;
   border: none;
 
+  &--block {
+    width: 280px;
+    margin: auto;
+  }
+
+
   &--logo {
-    padding-left: 20px;
     padding-bottom: 48px;
 }
 
@@ -17,7 +22,7 @@
     text-transform: uppercase;
     display: block;
 
-    padding-left: 20px;
+
     padding-bottom: 80px;
     align-items: start;
     text-align: left;
@@ -26,6 +31,8 @@
 }
 
 .nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 

@@ -1,18 +1,14 @@
 
 .testimonials {
-  padding-left: 20px;
-  padding-right: 20px;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  width: 280px;
+  margin: auto;
 
 
 &--subtitle {
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 100%;
-  letter-spacing: 3px;
-  text-align: left;
-  text-transform: uppercase;
-  padding-bottom: 16px;
+    padding-bottom: 16px;
+    text-align: left;
 }
 
 &--title {
@@ -86,17 +82,16 @@
   color: #253757;
   padding-bottom: 4px;
 }
-
-&--subtitle {
-  font-family: Poppins;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 100%;
-    letter-spacing: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #C0CDD7;
-    padding-bottom: 32px;
 }
 
+.card--subtitle {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C0CDD7;
+  padding-bottom: 32px;
 }

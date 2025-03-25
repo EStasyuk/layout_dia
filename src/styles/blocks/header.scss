@@ -5,18 +5,14 @@
   height: 100vh;
   display: grid;
   grid-template: minmax(46px, auto) minmax(359px, auto) minmax(390px, auto)/1fr;
-  row-gap: 48px;
+  //row-gap: 48px;
   grid-template-areas:
   "top-bar"
   "middle"
   "img-bottom";
-  //flex-direction: column;
-  //justify-content: space-between;
-  //background-image: url(/src/images/cover_img.png);
-  //background-position: bottom;
-  //background-size: 100%;
-  //background-repeat: no-repeat;
+
   border-radius: 0 0 50px 50px;
+  position: relative;
 
 }
 
@@ -24,8 +20,12 @@
   grid-area: middle;
   padding-left: 20px;
   padding-right: 20px;
-  display: grid;
-  //flex-direction: column;
+  //display: grid;
+  //width: 280px;
+  justify-items: center;
+
+  display: flex;
+  flex-direction: column;
   //justify-content: space-between;
 
 }
@@ -33,6 +33,10 @@
 .header__title {
   display: grid;
   row-gap: 32px;
+  margin: auto;
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .header__text {
@@ -44,17 +48,25 @@
   line-height: 150%;
   letter-spacing: 0px;
   color: #FFFFFF;
-  margin: 0;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 72px;
+  width: 280px;
+
 }
 
 .img-bottom {
-  grid-area: img-bottom;
+  //grid-area: img-bottom;
   background-image: url(/src/images/cover_img.png);
-  background-repeat: no-repeat;
+  //background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   background-size: cover;
   border-radius: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
 
 
 }
@@ -75,6 +87,7 @@
   height: 32px;
   display: flex;
   gap: 16px;
+
 }
 
 .intro--subtitle {
@@ -84,7 +97,8 @@
   line-height: 100%;
   letter-spacing: 3px;
   text-align: left;
-
+  padding-top: 16px;
+  padding-bottom: 8px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -96,6 +110,7 @@
   //line-height: 140%;
   letter-spacing: 0px;
   color: #FFFFFF;
+  padding-bottom: 24px;
 }
 
 .btn {
@@ -111,6 +126,7 @@
   justify-content: center;
   align-items: center;
   border: none;
+  margin: auto;
 
   color: #FFFFFF;
   width: 280;
@@ -118,5 +134,6 @@
   border-radius: 8px;
   background-color: #2060F6;
   align-self: flex-end;
+  margin-bottom: 48px;
 
 }
