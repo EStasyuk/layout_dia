@@ -10,6 +10,8 @@
 @import './blocks/top-bar.scss';
 @import './blocks/work.scss';
 @import './blocks/fonts.scss';
+@import './utils/_mixins.scss';
+
 
 
 
@@ -28,6 +30,7 @@ body {
   //grid-template: minmax(893px, auto) minmax(402px, auto) minmax(1375px, auto) minmax(1467px, auto) minmax(1548px, auto) minmax(571px, auto) minmax(auto, auto)/1fr;
   //gap: 120px;
   background-color: #F2F6FA;
+
 }
 
 h1 {
