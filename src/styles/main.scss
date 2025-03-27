@@ -10,7 +10,7 @@
 @import './blocks/top-bar.scss';
 @import './blocks/work.scss';
 @import './blocks/fonts.scss';
-@import './utils/_mixins.scss';
+@import './utils/mixins.scss';
 
 
 
@@ -35,6 +35,12 @@ body {
 
 h1 {
   margin: 0;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -2px;
+
 }
 
 h2 {

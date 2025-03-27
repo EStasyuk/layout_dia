@@ -1,36 +1,45 @@
+@import './../utils/mixins.scss';
 
 .top-bar {
 
   display: grid;
+
   grid-area: top-bar;
   grid-template-columns: 1fr 2fr 1fr;
   height: 28px;
 
   margin: auto;
   margin-top: 20px;
-  //margin-bottom: 48px;
+  margin-bottom: 48px;
 
   @include onTablet {
-      //width: 558px;
+    min-width: 558px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+
+  }
+
+    @include onSmallDesktop {
+      column-gap: 20px;
       grid-column: 1/-1;
 
     }
 
-    @include onSmallDesktop {
-
-    }
-
     @include onDesktop {
-      margin: 0px 72px 120px 72px;
+      grid-column: 1/-1;
     }
 
     @include onTheDesign {
-      margin-top: 0px;
-      margin: 0px 120px 120px 120px;
+      column-gap: 24px;
+      grid-column: 1/-1;
+
     }
 
     @include onLargeScreens {
-      margin: 0px 72px 120px 72px;
+      column-gap: 24px;
+      grid-column: 1/-1;
     }
 
 &__logo {
@@ -82,7 +91,18 @@
       background-color: #2060F6;
     }
 }
-}
+
+  &--menu {
+    display: none;
+
+    @include onSmallDesktop {
+      display: flex;
+      flex-direction: row;
+
+    }
+    }
+  }
+
 
 .icon--menu {
   background-image: url(/src/images/Menu.png);
@@ -94,4 +114,9 @@
 &:hover {
   transform: scale(1.2);
 }
+
+     @include onSmallDesktop {
+      display: none;
+     }
 }
+
