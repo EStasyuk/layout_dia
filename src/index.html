@@ -10,7 +10,8 @@
     <link rel="icon" type="favicon"
     href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
@@ -23,35 +24,54 @@
   <body>
     <div class="wrapper">
       <header id="home" class="header">
-        <div class="top-bar">
-          <a href="#" class="top-bar__logo-link top-bar__logo">
-            <img src="images/Logo.png" alt="Air logo">
-          </a>
-          <div class="top-bar__icon">
-            <a href="#menu" class="icon icon--menu"></a>
-          </div>
+        <div class="container">
+          <div class="top-bar">
+            <div class="top-bar--logo-menu">
+              <a href="#" class="top-bar__logo-link top-bar__logo">
+                <img src="images/Logo.png" alt="Air logo">
+              </a>
+              <div class="top-bar__icon">
+                <a href="#menu" class="icon icon--menu"></a>
+              </div>
+            </div>
 
-          <div class="top-bar--menu">
-            <a href="#about_us" class="menu--about_us">About us</a>
-            <a href="#services" class="menu--services">Services</a>
-            <a href="#testimonials" class="menu--testimonials">Testimonials</a>
-            <a href="#contact_us" class="menu--contact_us">Contact us</a>
-          </div>
+            <nav class="nav top-bar--menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#about_us" class="nav__link menu--about_us">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#services" class="nav__link menu--services">Services</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#testimonials" class="nav__link menu--testimonials">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact_us" class="nav__link menu--contact_us">Contact us</a>
+                </li>
+              </ul>
+            </nav>
 
-          <div class="top-bar__hire-us">
-            <button class="top-bar__btn">Hire us</button>
+            <nav class="nav top-bar__hire-us">
+              <ul class="nav--list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#hire-us">Hire us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__container">
+            <div class="header__middle">
+              <h1 class="header__title">Strategic Agency</h1>
+              <p class="header__text">
+                We believe in the power of bold ideas that can solve business challenges.
+              </p>
+              <div class="header__btn">
+                <button type="submit" class="btn header__button">Learn more</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="middle">
-          <h1 class="header__title">Strategic Agency</h1>
-          <p class="header__text">
-            We believe in the power of bold ideas that can solve business challenges.
-          </p>
-          <div class="header__btn">
-            <button type="submit" class="btn">Learn more</button>
-          </div>
-        </div>
-
 
         <div class="img-bottom">
           <div class="img-items">
@@ -74,102 +94,111 @@
         </section>
         <section id="work" class="work">
           <h2 class="work--title">Our expertise</h2>
-          <img class="work--img" src="images/Photo_mask.png"
-          alt="Journals">
-          <h3 class="work__branding work--subtitle">Branding</h3>
-          <p class="work__branding--text work--text">We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the
-          audience.
-          </p>
-          <img class="work--img" src="images/Photo_mask1.png"
-          alt="Posters_on_wall">
-          <h3 class="communication work--subtitle">Communication</h3>
-          <p class="communication--text work--text">We strive to create communications that can increase media performance. We use
-            everything — words, meanings, stories,
-            art, movies.
-          </p>
-          <img class="work--img" src="images/Photo_mask2.png"
-          alt="Board">
-          <h3 class="strategy work--subtitle">Strategy</h3>
-          <p class="strategy--text work--text">We create business growth strategies, from the moment of its birth to the achievement of
-            the necessary business
-            indicators.
-          </p>
+          <div class="work__cards">
+            <div class="work--card">
+              <img class="work--img" src="images/Photo_mask.png" alt="Journals">
+              <h3 class="work__branding work--subtitle">Branding</h3>
+              <p class="work__branding--text work--text">We create additional value for companies, products, services as well as
+                verbal and visual ways to deliver it to the
+                audience.
+              </p>
+            </div>
+            <div class="work--card">
+              <img class="work--img" src="images/Photo_mask1.png" alt="Posters_on_wall">
+              <h3 class="communication work--subtitle">Communication</h3>
+              <p class="communication--text work--text">We strive to create communications that can increase media performance. We use
+                everything — words, meanings, stories,
+                art, movies.
+              </p>
+            </div>
+            <div class="work--card">
+              <img class="work--img" src="images/Photo_mask2.png" alt="Board">
+              <h3 class="strategy work--subtitle">Strategy</h3>
+              <p class="strategy--text work--text">We create business growth strategies, from the moment of its birth to the
+                achievement of
+                the necessary business
+                indicators.
+              </p>
+            </div>
+          </div>
         </section>
-        <section id="services" class="services">
-          <h4 class="services--subtitle">Services</h4>
-          <h2 class="services--title">Air is a full service creative agency</h2>
-          <p class="services--text1">Deep analytics, strong strategy and bright creative ideas.</p>
 
-          <p class="services--text2">We are sure that first-rate job is possible only if all three components are united.
-          </p>
-          <div class="cards">
-            <div class="services--card">
-              <div class="cards--num">
-                <div class="cards--number">001
+        <section id="services" class="services">
+          <div class="services--header">
+            <h4 class="services--subtitle">Services</h4>
+            <h2 class="services--title">Air is a full service creative agency</h2>
+            <p class="services--text1">Deep analytics, strong strategy and bright creative ideas.</p>
+
+            <p class="services--text2">We are sure that first-rate job is possible only if all three components are united.
+            </p>
+          </div>
+          <div class="services__cards">
+            <div class="services__cards--group1 group">
+              <div class="services--card">
+                <div class="cards--num">
+                  <div class="cards--number">001
+                  </div>
+                </div>
+                <p class="cards--text">
+                  Brand Development <br>
+                  Copywriting <br>
+                  Logo & Webite Design <br>
+                  Packaging <br>
+                </p>
+                <div class="cards--arrow">
+                  <img class="arrow" src="images/Arrow.png" alt="Arrow">
+                  <a class="learn-more" href="#">Learn more</a>
                 </div>
               </div>
-              <p class="cards--text">
-                Brand Development <br>
-                Copywriting <br>
-                Logo & Webite Design <br>
-                Packaging <br>
-              </p>
-              <div class="card--arrow">
-                <img class="arrow" src="images/Arrow.png"
-                alt="Arrow">
-                <a class="learn-more"  href="#">Learn more</a>
+              <div class="services--card">
+                <div class="cards--num">
+                  <div class="cards--number">002
+                  </div>
+                </div>
+                <p class="cards--text">
+                  Сontent Production <br>
+                  Graphic Design <br>
+                  Video Production <br>
+                  Post Production <br>
+                </p>
+                <div class="cards--arrow">
+                  <img class="arrow" src="images/Arrow.png" alt="Arrow">
+                  <a class="learn-more" href="#">Learn more</a>
+                </div>
               </div>
             </div>
-            <div class="services--card">
-              <div class="cards--num">
-                <div class="cards--number">002
+            <div class="services__cards--group1 group">
+              <div class="services--card">
+                <div class="cards--num">
+                  <div class="cards--number">003
+                  </div>
+                </div>
+                <p class="cards--text">
+                  Marketing Strategy <br>
+                  Email Marketing <br>
+                  Paid Advertising <br>
+                  Blog Content & SEO <br>
+                </p>
+                <div class="cards--arrow">
+                  <img class="arrow" src="images/Arrow.png" alt="Arrow">
+                  <a class="learn-more" href="#">Learn more</a>
                 </div>
               </div>
-              <p class="cards--text">
-              Сontent Production <br>
-              Graphic Design <br>
-              Video Production <br>
-              Post Production <br>
-              </p>
-              <div class="card--arrow">
-                <img class="arrow" src="images/Arrow.png"
-                alt="Arrow">
-                <a class="learn-more"  href="#">Learn more</a>
-              </div>
-            </div>
-            <div class="services--card">
-              <div class="serv--card"></div>
-              <div class="cards--num">
-                <div class="cards--number">003
+              <div class="services--card">
+                <div class="cards--num">
+                  <div class="cards--number">004
+                  </div>
                 </div>
-              </div>
-              <p class="cards--text">
-                Marketing Strategy <br>
-                Email Marketing <br>
-                Paid Advertising <br>
-                Blog Content & SEO <br>
-              </p>
-              <div class="card--arrow">
-                <img class="arrow" src="images/Arrow.png"
-                alt="Arrow">
-                <a class="learn-more"  href="#">Learn more</a>
-              </div>
-            </div>
-            <div class="services--card">
-              <div class="cards--num">
-                <div class="cards--number">004
+                <p class="cards--text">
+                  Digital Communications <br>
+                  Influencer Marketing <br>
+                  Product Placements <br>
+                  Strategic Partnerships <br>
+                </p>
+                <div class="cards--arrow">
+                  <img class="arrow" src="images/Arrow.png" alt="Arrow">
+                  <a class="learn-more" href="#">Learn more</a>
                 </div>
-              </div>
-              <p class="cards--text">
-                Digital Communications <br>
-                Influencer Marketing <br>
-                Product Placements <br>
-                Strategic Partnerships <br>
-              </p>
-              <div class="card--arrow">
-                <img class="arrow" src="images/Arrow.png"
-                alt="Arrow">
-                <a class="learn-more" href="#">Learn more</a>
               </div>
             </div>
           </div>
@@ -279,10 +308,11 @@
       </main>
       <footer class="footer">
         <div class="footer--block">
-          <img class="footer--logo" src="images/Logo.png" alt="Air logo">
+          <img class="footer--logo" src="images/Logo.png"
+          alt="Air logo">
           <div class="footer--content">
             <nav id="menu" class="nav footer__nav">
-              <ul class="nav__list">
+              <ul class="nav__list footer--menu">
                 <li class="nav__item">
                   <a class="nav__link" href="#about_us">About us</a>
                 </li>
