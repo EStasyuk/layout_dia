@@ -3,30 +3,52 @@
 .work {
   background-color: #FFFFFF;
   border-radius: 30px;
-  padding: 72px 20px 72px 20px;
+  padding-inline: 20px;
+  //margin: 0;
 
   @include onTablet {
-    padding: 128px 41px 128px 41px;
-  }
+      padding-inline: 41px;
+    }
 
-  @include onSmallDesktop {
-    padding: 128px 54px 134px 54px;
-  }
+    @include onSmallDesktop {
+      padding-inline: 54px;
+      //max-width: 916px;
 
-  @include onDesktop {
-    padding-left: 118px;
-    padding-right: 118px;
-  }
+    }
 
-  @include onTheDesign {
-    padding-left: 227px;
-    padding-right: 227px;
-  }
+    @include onDesktop {
+      padding-inline: 118px;
+      //max-width: 1044px;
 
-  @include onLargeScreens {
-    padding-left: 707px;
-    padding-right: 707px;
-  }
+    }
+
+    @include onTheDesign {
+      padding-inline: 227px;
+      //max-width: 1148px;
+
+    }
+
+    @include onLargeScreens {
+      padding-inline: 707px;
+    }
+
+    &__container{
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      margin: 0;
+      padding: 72px 0 72px;
+
+      @include onTablet {
+        padding: 128px 0 128px;
+      }
+
+      @include onSmallDesktop {
+        padding-bottom: 134px;
+      }
+
+
+    }
 
 &--title {
   font-family: Poppins;
@@ -35,24 +57,26 @@
   line-height: 120%;
   letter-spacing: 0px;
   text-align: center;
-  vertical-align: middle;
   color: #253757;
-  padding-bottom: 56px;
-  margin: auto;
+  //padding-bottom: 56px;
+  margin: 0;
 
   @include onTablet {
-      padding-bottom: 64px;
-    }
+    font-style: 52px;
+    line-height: 150%;
+  }
+
 }
 
 &--img {
   height: 166px;
   width: 166px;
   display: block;
-  margin: auto;
+  //margin: auto;
   //margin-top: 56px;
-  margin-bottom: 32px;
-
+  //margin-bottom: 32px;
+  object-fit: cover;
+  border-radius: 16px;
 
 }
 
@@ -70,18 +94,18 @@
 &__cards {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
     gap: 56px;
-    justify-content: space-between;
+    //justify-content: space-between;
 
   @include onTablet {
-      padding-left: 139px;
-      padding-right: 139px;
+      //padding-left: 139px;
+      //padding-right: 139px;
       gap: 72px;
     }
 
     @include onSmallDesktop {
-      padding: 0;
+      //padding: 0;
       margin: 0;
       flex-direction: row;
       gap: 137px;
@@ -92,7 +116,12 @@
     }
     }
 
-}
+    &--card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 
 h3 {

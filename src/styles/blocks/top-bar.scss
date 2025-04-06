@@ -67,17 +67,14 @@
 }
 
     .nav {
-      &__list {
+      &__list--header {
         margin: 0;
         padding: 0;
         list-style: none;
+        gap: 48px;
 
         display: flex;
-        gap: 32px;
 
-        @include onDesktop {
-          gap: 48px;
-        }
       }
 
     &__link {
@@ -92,7 +89,6 @@
       //line-height: 150%;
       letter-spacing: 3px;
       text-transform: uppercase;
-
 
     &::after {
       content: '';
@@ -112,11 +108,12 @@
     &:hover::after {
       transform: scale(1);
     }
-}
+  }
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .icon--menu {

@@ -1,0 +1,32 @@
+@import './../utils/mixins.scss';
+
+.container {
+  //margin-inline: auto;
+  padding-inline: 20px;
+
+ @include onTablet {
+   padding-inline: 41px;
+ }
+
+ @include onSmallDesktop {
+   padding-inline: 54px;
+   max-width: 916px;
+
+ }
+
+ @include onDesktop {
+   padding-inline: 118px;
+   max-width: 1044px;
+
+ }
+
+ @include onTheDesign {
+   padding-inline: 227px;
+   max-width: 1148px;
+
+ }
+
+ @include onLargeScreens {
+   padding-inline: 707px;
+ }
+}

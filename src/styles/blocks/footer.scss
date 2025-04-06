@@ -5,14 +5,37 @@
   border: none;
 
   &--block {
-    width: 280px;
-    margin: auto;
+    padding-inline: 20px;
+    //margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+
+    @include onTablet {
+      padding-inline: 41px;
+      }
+
+      @include onSmallDesktop {
+        padding-inline: 54px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+     @include onDesktop {
+       padding-inline: 54px;
+       flex-direction: row;
+     }
+     @include onTheDesign {
+       padding-inline: 227px;
+       flex-direction: row;
+     }
+     @include onLargeScreens {
+       padding-inline: 707px;
+       flex-direction: row;
+     }
   }
 
-
-  &--logo {
-    padding-bottom: 48px;
-}
 
   &--content {
     font-family: Poppins;
@@ -21,7 +44,8 @@
     line-height: 150%;
     letter-spacing: 3px;
     text-transform: uppercase;
-    display: block;
+    //display: block;
+
 
 
     padding-bottom: 80px;
@@ -29,5 +53,23 @@
     text-align: left;
 
   }
+
+  &--menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onSmallDesktop {
+      gap: 64px;
+
+    }
+  }
 }
+
+
 

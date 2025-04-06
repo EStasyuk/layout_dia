@@ -1,0 +1,13 @@
+@import './../utils/mixins.scss';
+
+button {
+  width: 100%;
+
+  @include onTablet {
+    display: block;
+    float: left;
+    width: 264px;
+    margin-left: 0;
+    //padding-bottom: 100px;
+  }
+}
